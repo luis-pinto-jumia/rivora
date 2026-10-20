@@ -12,10 +12,10 @@ const config: Config = {
   },
 
   url: 'https://zyvorai.github.io',
-  baseUrl: '/rivora/',
+  baseUrl: '/zyvor-rivora/',
 
   organizationName: 'zyvorai',
-  projectName: 'rivora',
+  projectName: 'zyvor-rivora',
 
   onBrokenLinks: 'throw',
 
@@ -39,7 +39,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/zyvorai/rivora/tree/main/website/',
+          editUrl: 'https://github.com/zyvorai/zyvor-rivora/tree/main/website/',
         },
         blog: false,
         theme: {
@@ -52,7 +52,8 @@ const config: Config = {
   themeConfig: {
     image: 'rivora-share-card.png',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Rivora',
@@ -67,8 +68,9 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
+        {to: '/support', label: 'Support', position: 'right'},
         {
-          href: 'https://github.com/zyvorai/rivora',
+          href: 'https://github.com/zyvorai/zyvor-rivora',
           label: 'GitHub',
           position: 'right',
         },
@@ -93,10 +95,11 @@ const config: Config = {
         {
           title: 'Project',
           items: [
-            {label: 'GitHub', href: 'https://github.com/zyvorai/rivora'},
+            {label: 'Support', to: '/support'},
+            {label: 'GitHub', href: 'https://github.com/zyvorai/zyvor-rivora'},
             {
               label: 'License (Apache-2.0)',
-              href: 'https://github.com/zyvorai/rivora/blob/main/LICENSE',
+              href: 'https://github.com/zyvorai/zyvor-rivora/blob/main/LICENSE',
             },
           ],
         },
